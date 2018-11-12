@@ -1,0 +1,149 @@
+<html>
+<head>
+<style>
+body {
+margin:0;
+background-color:grey;}
+
+.lftdiv{
+width:200PX;
+height:1500px;
+background-color:white;
+float:left;
+}
+.rightdiv{
+background-color:white;
+float:right;
+width:200px;
+height:1500px;
+
+}
+
+
+.middiv{
+width:*;
+height:1300px;
+background-color:grey;
+}
+.midmiddiv{
+margin-top:50;
+width:*;
+height:200px;
+background-color:#FFF0F5;
+
+}
+.sdiv{
+    font-family:Courier New;
+float:left;
+text-align:center;
+position:absolute;
+margin:18PX;
+position:relative;
+height:150px;
+width:150px;
+background-color:white;
+border-radius:10px;
+}
+
+
+
+.navbar {  
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  font-weight:Courier New;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover{
+  background: red;
+  color: black;
+  opacity: 0.5;
+}
+
+.butt {
+
+background-color:blue;
+float:right;
+}
+
+.navbar a.active {
+  background-color: lightcyan;
+  color: black;
+}
+.tit{height:100%;
+width:100%;
+color:red;
+font-size:20px;}
+
+.sdiv a:hover{
+    background:red;
+    opacity: 0.5;
+    color:blue;
+}
+</style>
+
+<title>College Appliation Approval</title>
+</head>
+<body>
+<div class="navbar">
+<div class="butt">
+   <a href="LogOutServlet" >Log out</a></div>
+   <a href="#">Contact</a>
+   <a href="#status">Status</a>
+   <a href="#about">About Us</a>
+   <a href="#home" class="active">Home</a>  
+   <a href="#home" class="active" style="float:left;">College Appliation Approval</a>
+		 
+  
+</div>
+<div class="lftdiv">
+
+</div>
+<div class="rightdiv">
+
+
+</div>
+
+
+
+<div class="middiv">
+
+<div class="midmiddiv">
+    <a href=""><div class="sdiv">
+            <p>APPLICATION STATUS<p>
+        </div></a>
+<a href=""><div class="sdiv">
+        <P>STUDENT INFO</P>
+        </div></a>
+    <a href=""><div class="sdiv">
+            <P>FACULTY</P>
+        </div></a>
+    <a href=""><div class="sdiv">
+            <P>GATE LEAVE APPLICATION</P>
+        </div></a>
+    <a href=""><div class="sdiv">
+            <p>HOLIDAY LEAVE APPLICATION</p>
+        </div></a>
+
+
+
+
+
+</div>
+
+</div>
+<!--    <p>   loggd in as:<%=request.getSession().getAttribute("userName").toString()%></p>-->
+</body>
+</html>

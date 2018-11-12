@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SIGN UP PAGE</title>
+        <style>
+            body{
+	background-color:#660000;
+	}
+	.div1{
+	background-color:#d9d9d9;
+	
+	width:500px;
+	height:600px;
+	border-radius:5px;
+	margin:auto;
+	margin-top:5%;
+	box-shadow: 10px 10px 10px black;
+	}
+        .sign{
+	text-align:center;
+	font-family:Courier New;
+	font-size:40px;
+	color:#444;
+	}
+        .inp1{
+            
+	font-size:20px;
+	font-family:Courier New;
+	}
+        .frm1{
+/*	background-color:grey;*/
+	height:75%;
+	width:70%;
+	margin:auto;
+	border-radius:3px;
+	box-shadow:5px 5px 7px black;
+	}
+        .abc1{
+	border-radius:5px;
+	height:40px;
+	width:250px
+	
+	}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          input[type=submit]:hover {
+    background-color: #45a049;
+}
+  input[type=submit] {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font-weight:bold;
+	font-size:20px;
+	box-shadow:5px 5px 5px;
+}
+            </style>
+            
+    </head>
+    <body>
+        <div class="div1">
+            <div class="sign">SIGN UP</div>
+            <div class="frm1">
+            <form action="SignUpServlet" method="post">
+            <table align="center" >
+                <tr>
+                    <td class="inp1">FIRST NAME</td></tr>
+                   <tr> <td><input class="abc1" type="text" name="fnm" placeholder="eg.RAHUL" required></td>
+                </tr>
+                <tr>
+                    <td class="inp1">LAST NAME</td></tr>
+                    <tr><td><input class="abc1" type="text" name="lnm" placeholder="eg.SHARMA" required></td>
+                </tr>
+                <tr>
+                    <td class="inp1">USERNAME</td></tr>
+                    <tr><td><input class="abc1" type="text" name="unm" placeholder="eg.abcdef123" required></td>
+                </tr>
+                
+                <tr>
+                    <td class="inp1">GENDER</td></tr>
+                   <tr> <td required>  
+                     <input type="radio" name="gender" value="male" >Male
+                     <input type="radio" name="gender" value="female">Female
+                     <input type="radio" name="gender" value="other">Other 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="inp1">PASSWORD</td></tr>
+                    <tr><td><input class="abc1" type="password" name="pswd" placeholder="ENTER valid pasword" required></td>
+                </tr>
+                <tr>
+                    <td class="inp1">MOBILE NUMBER</td>
+                </tr>
+                <tr>
+                    <td><input class="abc1"type="text" placeholder="eg..458465465"></td>
+                </tr>
+                <tr><td><input type="submit" value="SIGN UP"></td></tr>
+            </table>
+                </form>
+                </div>
+        </div>
+    </body>
+</html>
